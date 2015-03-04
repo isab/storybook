@@ -12,6 +12,8 @@ function newPassage(){
 	workspace.appendChild(plot);
 	workspace.appendChild(linkTo);
 
+	console.log("HERHEHREHHERHERHHER");
+
 }
 
 function existingTitles(){
