@@ -6,7 +6,7 @@
 		<script type='text/javascript' src='Create.js'></script>
 	</head>
 	<body>
-		<h1>Argo Snacks</h1>
+		<h1>Choose Your Own Adventure</h1>
 		<form>
 			Title : <br>
 			<input type="text" name="title" id="titleID">
@@ -19,11 +19,14 @@
 			<br><br>
 			<input type="submit" value="Submit" onClick="newPassage();">
 		</form>
-		<div id= "snackbag">
-			<h2>Snack Bag</h2>
+		<div id= "workspace">
+			<h2>Workspace</h2>
+		</div>
+		<div id= "titles">
+			<button onclick="existingTitles();">Existing Titles</button>
 		</div>
 		<script>
-			start();	
+			init();	
 		</script>
 	</body>
 </html>

@@ -63,5 +63,3 @@ function cancel(e) {
         ipt[l].readOnly = true;
     }
 }
-
-init();
