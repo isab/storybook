@@ -17,6 +17,6 @@ function newPassage(){
 function existingTitles(){
 	tarr.sort();
 	for(var i = 0; i < tarr.length; i++){
-		console.log(tarr[i]);
+		window.alert(tarr[i]);
 	}
 }
