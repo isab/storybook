@@ -23,7 +23,7 @@ function existingTitles(){
 
 var D, form, bts, ipt;
 
-function (W){
+(function (W){
 	function init() {
 	    D = W.document, previous = [];
 	    form = D.getElementsByTagName('form')[0];
@@ -64,4 +64,4 @@ function (W){
 	        ipt[l].readOnly = true;
 	    }
 	}
-}
+})(window)
