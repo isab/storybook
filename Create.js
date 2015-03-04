@@ -64,4 +64,5 @@ var D, form, bts, ipt;
 	        ipt[l].readOnly = true;
 	    }
 	}
+	init();
 })(window)
