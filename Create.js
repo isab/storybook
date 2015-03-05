@@ -1,18 +1,11 @@
 var tarr = new Array();
 
 function newPassage(){
-	var title = document.getElementById('titleID');
-	var plot = document.getElementById('plotID');
-	var linkTo = document.getElementById('linkToID');
+	var title = prompt("Title Please");
+	var plot = prompt("Plot Please");
+	var linkTo = prompt("Link To Which Other Passages>");
 
 	tarr.push(title);
-
-	var workspace = document.getElementById('workspaceID');
-	workspace.appendChild(title);
-	workspace.appendChild(plot);
-	workspace.appendChild(linkTo);
-
-	console.log("HERHEHREHHERHERHHER");
 
 }
 

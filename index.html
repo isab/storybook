@@ -5,24 +5,13 @@
 	</head>
 	<body>
 		<h1>Choose Your Own Adventure</h1>
-		<form>
-			Title : <br>
-			<input type="text" name="title" id="titleID">
-			<br>
-			Plot : <br>
-			<input type="text" name="plot" id="plotID">
-			<br>
-			Link To : <br>
-			<input type="text" name="linkTo" id="linkToID">
-			<br><br>
-			<button onclick="newPassage();">Submit</button>
-		</form>
+		<button onclick="newPassage()">New Passage</button>
 		<center>
-		<div id= "workspace">
+		<div id= "workspaceID">
 			<h2>Workspace</h2>
 		</div>
 		<div id= "titles">
-			<button onclick="existingTitles();">Existing Titles</button>
+			<button onclick="existingTitles()">Existing Titles</button>
 		</div>
 		</center>
 	</body>
