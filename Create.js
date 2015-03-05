@@ -57,10 +57,10 @@ function play(){
 }
 
 function keepGoing(){
-	var goTo = prompt("What's your next step?");
 	if(goTo === tarr[tarr.length-1]){
 		document.writeln("THE END");
 	}
+	var goTo = prompt("What's your next step?");
 	for(var i = 0; i < tarr.length; i++){
 		if(goTo === tarr[i]){
 			next(i);
