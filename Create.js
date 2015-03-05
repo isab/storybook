@@ -24,7 +24,7 @@ function display(){
 	for(var i = 0; i < tarr.length; i++){
 		document.writeln("Title : " + tarr[i]);
 		document.writeln("Plot : " + parr[i]);
-		document.writeln("Links : " + larr[i];
+		document.writeln("Links : " + larr[i]);
 	}
 }
 
