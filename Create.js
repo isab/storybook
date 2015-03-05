@@ -16,15 +16,15 @@ function newPassage(){
 function existingTitles(){
 	tarr.sort();
 	for(var i = 0; i < tarr.length; i++){
-		document.write(tarr[i]);
+		document.writeln(i + " " + tarr[i]);
 	}
 }
 
 function display(){
 	for(var i = 0; i < tarr.length; i++){
-		document.write(tarr[i]);
-		document.write(parr[i]);
-		document.write(larr[i]);
+		document.writeln("Title : " + tarr[i]);
+		document.writeln("Plot : " + parr[i]);
+		document.writeln("Links : " + larr[i];
 	}
 }
 
@@ -36,16 +36,38 @@ function edit(){
 		var newT = prompt("New Title Please");
 		tarr[index] = newT;
 	}
-	if(option === "plot" || option === "Plot"){
+	else if(option === "plot" || option === "Plot"){
 		var newP = prompt("New Plot Please");
 		parr[index] = newP;
 	}
-	if(option === "links" || option === "Links"){
+	else if(option === "links" || option === "Links"){
 		var newL = prompt("New Links Please");
 		larr[index] = newL;
+	}
+	else{
+		window.alert("NOT CORRECT INPUT");
 	}
 }
 
 function play(){
-	
+	document.writeln(tarr[0]);
+	document.writeln(parr[0]);
+
+	start();
+}
+
+function keepGoing(){
+	var goTo = prompt("What's your next step?");
+	for(var i = 0; i < tarr.length; i++){
+		if(goTo === tarr[i]){
+			next(i);
+		}
+	}
+	console.log("THE END");
+}
+
+function next(index){
+	document.writeln(tarr[index]);
+	document.writeln(parr[index]);
+	keepGoing();
 }
