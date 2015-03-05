@@ -16,15 +16,15 @@ function newPassage(){
 function existingTitles(){
 	tarr.sort();
 	for(var i = 0; i < tarr.length; i++){
-		document.writeln(i + " " + tarr[i]);
+		document.writeln(i + " " + tarr[i] + "\n");
 	}
 }
 
 function display(){
 	for(var i = 0; i < tarr.length; i++){
-		document.writeln("Title : " + tarr[i]);
-		document.writeln("Plot : " + parr[i]);
-		document.writeln("Links : " + larr[i]);
+		document.writeln("Title : " + tarr[i] + "\n");
+		document.writeln("Plot : " + parr[i]) + "\n";
+		document.writeln("Links : " + larr[i] + "\n");
 	}
 }
 
@@ -58,17 +58,18 @@ function play(){
 
 function keepGoing(){
 	var goTo = prompt("What's your next step?");
+	if(goTo === tarr[tarr.length-1]){
+		document.writeln("THE END");
+	}
 	for(var i = 0; i < tarr.length; i++){
 		if(goTo === tarr[i]){
 			next(i);
 			break;
 		}
 	}
-	console.log("THE END");
 }
 
 function next(index){
-	document.writeln(tarr[index]);
-	document.writeln(parr[index]);
+	document.writeln(parr[index] + "\n");
 	keepGoing();
 }
