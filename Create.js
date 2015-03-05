@@ -53,7 +53,7 @@ function play(){
 	document.writeln(tarr[0]);
 	document.writeln(parr[0]);
 
-	start();
+	keepGoing();
 }
 
 function keepGoing(){
@@ -61,6 +61,7 @@ function keepGoing(){
 	for(var i = 0; i < tarr.length; i++){
 		if(goTo === tarr[i]){
 			next(i);
+			break;
 		}
 	}
 	console.log("THE END");
